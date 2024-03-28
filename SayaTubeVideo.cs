@@ -18,8 +18,6 @@ namespace modul6_1302220088
             id = random.Next(10000,99999);
             this.playCount = 0;
             this.title = title;
-
-
         }
 
         public void IncreasePlaycount(int a)
