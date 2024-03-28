@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +15,18 @@ namespace modul6_1302220088
 
         public SayaTubeUser(string Username)
         {
-            this.Username = Username;
+            this.Username = Username;S
             Random random = new Random();
             id = random.Next(10000,99999);
             uploadedVideos = new List<SayaTubeVideo>();
+
+            Contract.Requires(uploadedVideos.getTitle != null);
+            Contract.Requires(uploadedVideos[i].getTitle.Length <= 200);
+
+            try
+            {
+                if (uploadedVideos[i].getTitle)
+            }
 
         }
 
